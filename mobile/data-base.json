@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneca",
+      "price": 35.99,
+      "imageURI": "https://images.unsplash.com/photo-1542556398-95fb5b9f9b48?ixlib=rb-1.2.1&'ixid'=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Funko Pop",
+      "price": 56.5,
+      "imageURI": "https://images.unsplash.com/photo-1589419621083-1ead66c96fa7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Almofada Dragon",
+      "price": 49.9,
+      "imageURI": "https://cdn.nerdstore.com.br/wp-content/uploads/2020/11/almofada-dragon-moon.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Jogo de Tabuleiro",
+      "price": 60,
+      "imageURI": "https://images.unsplash.com/photo-1608189241326-a256baadcdf1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Xadrez",
+      "price": 94.99,
+      "imageURI": "https://images.unsplash.com/photo-1614605008553-d98daabfa5b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+    },
+    {
+      "name": "Star Wars",
+      "price": "169.90",
+      "imageURI": "https://cdn.nerdstore.com.br/wp-content/uploads/2021/01/funko-star-wars-mandalorian-the-child-with-frog-02.jpg",
+      "id": 6
+    }
+  ]
+}
