@@ -1,4 +1,9 @@
-import { AntDesign, Feather } from '@expo/vector-icons';
+import {
+  AntDesign,
+  Feather,
+  FontAwesome,
+  MaterialCommunityIcons
+} from '@expo/vector-icons';
 import React from 'react';
 
 interface OwnProps {
@@ -34,4 +39,24 @@ export const PlusIcon = (props: OwnProps) => (
 
 export const MenuIcon = (props: OwnProps) => (
   <Feather name="menu" {...iconDefaultConfig} {...props} />
+);
+
+export const ShoppingCart = (props: OwnProps) => (
+  <AntDesign name="shoppingcart" {...iconDefaultConfig} {...props} />
+);
+
+export const ShoppingCartPlus = (props: OwnProps) => (
+  <MaterialCommunityIcons name="cart-plus" {...iconDefaultConfig} {...props} />
+);
+
+export const ArrowLeftIcon = (props: OwnProps) => (
+  <AntDesign name="arrowleft" {...iconDefaultConfig} {...props} />
+);
+
+export const TrashIcon = (props: OwnProps) => (
+  <Feather name="trash-2" {...iconDefaultConfig} {...props} />
+);
+
+export const PencilIcon = (props: OwnProps) => (
+  <FontAwesome name="pencil" {...iconDefaultConfig} {...props} />
 );

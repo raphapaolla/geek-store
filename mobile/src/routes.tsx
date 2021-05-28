@@ -4,6 +4,7 @@ import React from 'react';
 import CustomDrawerContent from './components/CustomDrawerContent';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import ProductDetails from './pages/ProductDetails';
 import RegisterProduct from './pages/RegisterProduct';
 
 const Drawer = createDrawerNavigator();
@@ -32,6 +33,12 @@ const Routes = () => {
           name="registerProduct"
           component={RegisterProduct}
           options={{ title: 'Registrar Produto' }}
+        />
+
+        <Drawer.Screen
+          name="ProductDetails"
+          component={ProductDetails}
+          options={{ title: 'Detalhes do Produto' }}
         />
       </Drawer.Navigator>
     </NavigationContainer>

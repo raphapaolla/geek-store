@@ -1,11 +1,9 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   flex: 1;
   padding: 20px;
   background-color: #f2f2f2;
-
-  justify-content: space-evenly;
 `;
 
 export const Header = styled.View`
