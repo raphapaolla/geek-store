@@ -37,6 +37,10 @@ export const PlusIcon = (props: OwnProps) => (
   <AntDesign name="plus" {...iconDefaultConfig} {...props} />
 );
 
+export const MinusIcon = (props: OwnProps) => (
+  <AntDesign name="minus" {...iconDefaultConfig} {...props} />
+);
+
 export const MenuIcon = (props: OwnProps) => (
   <Feather name="menu" {...iconDefaultConfig} {...props} />
 );

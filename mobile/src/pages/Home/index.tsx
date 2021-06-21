@@ -91,6 +91,20 @@ const Home: React.FC = ({ navigation }: any) => {
     }
   };
 
+  const addItemToCart = async (item: any) => {
+    const data = {
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      image: item.images[0],
+      amount: 1
+    };
+
+    try {
+      await api.post(`/cart`, data);
+    } catch (err) {}
+  };
+
   return (
     <Container>
       <View>
@@ -113,7 +127,10 @@ const Home: React.FC = ({ navigation }: any) => {
             iconLeft
           />
 
-          <ButtonAdd style={{ marginLeft: 16 }}>
+          <ButtonAdd
+            style={{ marginLeft: 16 }}
+            onPress={() => navigation.navigate('cart')}
+          >
             <ShoppingCart />
           </ButtonAdd>
         </View>
@@ -143,7 +160,7 @@ const Home: React.FC = ({ navigation }: any) => {
                       <CardPrimaryTitle>{item.name}</CardPrimaryTitle>
                       <CardPrimaryPrice>{item.price} R$</CardPrimaryPrice>
                     </CardPrimaryInfo>
-                    <CardPrimaryCart>
+                    <CardPrimaryCart onPress={() => addItemToCart(item)}>
                       <CartIcon />
                     </CardPrimaryCart>
                   </CardPrimaryFooter>
@@ -205,9 +222,7 @@ const Home: React.FC = ({ navigation }: any) => {
                       </CardSecundaryTitle>
                       <CardSecundaryPrice>{item.price} R$</CardSecundaryPrice>
                     </CardSecundaryInfo>
-                    <CardSecundaryCart
-                      onPress={() => console.log('teste carrinho')}
-                    >
+                    <CardSecundaryCart onPress={() => addItemToCart(item)}>
                       <CartIcon />
                     </CardSecundaryCart>
                   </CardSecundaryFooter>

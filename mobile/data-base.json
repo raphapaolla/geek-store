@@ -82,5 +82,21 @@
       "id": 2,
       "name": "Recomendados"
     }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Funko Pop",
+      "price": 56.5,
+      "image": "https://images.unsplash.com/photo-1589419621083-1ead66c96fa7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "amount": 2
+    },
+    {
+      "id": 2,
+      "name": "Tabuleiro",
+      "price": 60,
+      "image": "https://images.unsplash.com/photo-1608189241326-a256baadcdf1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+      "amount": 3
+    }
   ]
 }

@@ -2,6 +2,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import CustomDrawerContent from './components/CustomDrawerContent';
+import Cart from './pages/Cart';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import ProductDetails from './pages/ProductDetails';
@@ -39,6 +40,12 @@ const Routes = () => {
           name="ProductDetails"
           component={ProductDetails}
           options={{ title: 'Detalhes do Produto' }}
+        />
+
+        <Drawer.Screen
+          name="cart"
+          component={Cart}
+          options={{ title: 'Cart' }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
